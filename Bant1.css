@@ -1,0 +1,313 @@
+﻿<html >
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<style >
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Calibri;
+}
+
+{
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 650px;
+    position: relative;
+    margin: auto;
+}
+
+
+.CofType {
+    max-width: 650px;
+    position: relative;
+    margin: auto;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: blue;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: red;
+    border-radius: 25%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: red;
+    }
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#Person {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #Person td, #Person th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #Person tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #Person tr:hover {
+        background-color: #00ffff;
+    }
+
+    #Person th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
+#Education {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #Education td, #Education th {
+        border: 1px none #ddd;
+        padding: 8px;
+    }
+
+    #Education tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #Education tr:hover {
+        background-color: #00ffff;
+    }
+
+    #Education th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: blue;
+        color: white;
+    }
+
+#Item1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: initial;
+    width: 45%;
+}
+
+    #Item1 td, #Education th {
+        border: 1px solid #ddd;
+        padding: 6px;
+    }
+
+#Item1 tr:nth-child(even) {
+    background-color: white;
+}
+
+    #Item1 tr:hover {
+        background-color: pink;
+    }
+
+    #Item1 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: red;
+        color: white;
+    }
+
+#Coffee {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: initial;
+    width: 100%;
+}
+
+    #Coffee td, #Education th {
+        border: 1px dashed #ddd;
+        padding: 8px;
+    }
+
+    #Coffee tr:nth-child(even) {
+        background-color: burlywood;
+    }
+
+    #Coffee tr:hover {
+        background-color: pink;
+    }
+
+    #Coffee th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: saddlebrown;
+        color: white;
+    }
+
+.topnav {
+    overflow: hidden;
+    background-color: red;
+}
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .topnav a.active {
+            background-color: #black;
+            color: white;
+        }
+
+    .topnav input[type=text] {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        border: none;
+        font-size: 17px;
+    }
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+</style >
+</head >
+<body >
+
+<div class="topnav" >
+<a class="active" href="Bantlin.html" > Home</a >
+<a href="coffee Page.html" > ComingSoon!</a >
+<a href="AboutMe2.html" > ComingSoon!</a >
+
+</div >
+</head >
+</div >
+<div class= "footer" >
+<p > Inayat pages</p >
+</div >
+</body >
+</html >
